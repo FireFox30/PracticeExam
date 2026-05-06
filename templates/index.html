@@ -4,12 +4,18 @@
         <input type="text" name="content" placeholder="Write a note..." required>
         <button type="submit">Add Note</button>
     </form>
+        <form method="get" action="{{ url_for('search') }}">
+            <input type="text" name="q" placeholder="Search notes..." value="{{ search_query or '' }}">
+            <button type="submit">Search</button>
+        </form>
 
     <ul>
     {% for note in notes %}
         <li>
-            {{ note.content }}
-            <small>({{ note.created_at }})</small>
+            <form method="post" action="{{ url_for('edit_note', note_id=note.id) }}" style="display:inline;">
+                <input type="text" name="content" value="{{ note.content }}" required>
+                <button type="submit">Save</button>
+            </form>
             <form method="post" action="{{ url_for('delete_note', note_id=note.id) }}" style="display:inline;">
                 <button type="submit">Delete</button>
             </form>

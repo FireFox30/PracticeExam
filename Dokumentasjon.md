@@ -1,0 +1,3 @@
+Her er public linken til AI chatten jeg brukte til å finne ut hvordan jeg skal vise informasjonen i psycopg2 databasen : https://chat.deepseek.com/share/76cujb09zd56rdcxgj
+Jeg brukt google sin gemeni i søkemotoren deres for å finne svar på hvordan jeg kan se om SSH fungerer
+Jeg brukte også en AI til å skirve en Base for programmet mitt som jeg har bygget på, på selve eksamensdagen : https://chat.deepseek.com/share/ppl5hi5j30spjmcry4. Jeg senere på dagen dropped sql for psycopg2 
